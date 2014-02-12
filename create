@@ -1,0 +1,8 @@
+#!/bin/sh
+
+x="cordova-plugin-camera cordova-plugin-device cordova-plugin-device-orientation cordova-plugin-geolocation cordova-plugin-contacts cordova-plugin-device-motion cordova-plugin-dialogs cordova-plugin-vibration"
+
+for plugin in $x; do
+    git remote add -f "$plugin" https://github.com/apache/"$plugin".git
+    git subtree add --prefix "$plugin" "$plugin" dev --squash
+done
