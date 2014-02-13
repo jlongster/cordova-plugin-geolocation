@@ -4,5 +4,5 @@ x="cordova-plugin-camera cordova-plugin-device cordova-plugin-device-orientation
 
 for plugin in $x; do
     git remote add -f "$plugin" https://github.com/apache/"$plugin".git
-    git subtree add --prefix "$plugin" "$plugin" dev --squash
+    git subtree add --prefix "$plugin" "$plugin"/dev --squash
 done
