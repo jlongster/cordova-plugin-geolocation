@@ -22,7 +22,7 @@
 // latest geolocation spec can be found here: http://www.w3.org/TR/geolocation-API/
 
 var idsMap = {};
-var test = "this is just a test";
+var test = "this is just another test";
 
 module.exports = {
     getLocation: function(success, error, args) {
